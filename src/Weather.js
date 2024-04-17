@@ -125,7 +125,7 @@ function getServer() {
         axios.get('/submissions')
   .then(response => { 
     setReq(response.data);// получаем с нашего сервера обновленный список запросов
-    console.log("askFromServer");
+    console.log(response.data);
   })
   .catch(error => {
     console.error('Ошибка при получении данных:', error);
