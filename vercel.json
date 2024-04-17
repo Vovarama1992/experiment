@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "src": "/submissions",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/submit",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
