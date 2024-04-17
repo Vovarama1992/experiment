@@ -122,7 +122,7 @@ function WeatherForm({ callback = getWeather }) {
 
     
 function getServer() {
-        axios.get('https://experiment-with-server.vercel.app/submissions')
+        axios.get('/submissions')
   .then(response => { 
     setReq(response.data);// получаем с нашего сервера обновленный список запросов
     console.log("askFromServer");
@@ -135,7 +135,7 @@ function getServer() {
     function postServer() {
         
         const obj = {value: text};
-        axios.post('https://experiment-with-server.vercel.app/submit', obj).then(res => {
+        axios.post('/submit', obj).then(res => {
             
         console.log("Отправлены данные на сервер", res.data);
 
